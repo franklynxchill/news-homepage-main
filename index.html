@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="/dist/style.css">
+  
+  <title>Frontend Mentor | News homepage</title>
+</head>
+<body class="font-fontInter h-screen bg-offWhite">
+  <!-- header section -->
+  <header>
+    <nav class="container relative py-7">
+      <!-- desktop menu -->
+      <div class="flex items-center w-full ">
+        <a href="#">
+          <img src="/assets/images/logo.svg" alt="logo">
+        </a>
+        <ul class="hidden md:flex flex-1 justify-end items-center gap-x-10 text-grayishBlue">
+          <li class="hover:text-softRed"><a href="">Home</a></li>
+          <li class="hover:text-softRed"><a href="">New</a></li>
+          <li class="hover:text-softRed"><a href="">Popular</a> </li>
+          <li class="hover:text-softRed"><a href="">Trending</a></li>
+          <li class="hover:text-softRed"><a href="">Categories</a></li>
+        </ul>
+        <button type="menu" id="hamburger-btn" class="md:hidden flex flex-1 justify-end">
+          <img src="/assets/images/icon-menu.svg" alt="icon-menu">
+        </button>
+      </div>
+      <!-- mobile menu -->
+      <div id="menu-section" class="md:hidden bg-offWhite fixed top-0 right-0 w-[22rem] h-screen pt-7 pl-9  pr-5 hidden">
+        <button type="menu" id="close-menu" class="flex justify-end w-full mb-32">
+          <img src="/assets/images/icon-menu-close.svg" alt="icon-menu-close">
+        </button>
+        <ul class="flex flex-col gap-y-5 text-xl">
+          <li class="hover:text-softRed"><a href="">Home</a></li>
+          <li class="hover:text-softRed"><a href="">New</a></li>
+          <li class="hover:text-softRed"><a href="">Popular</a> </li>
+          <li class="hover:text-softRed"><a href="">Trending</a></li>
+          <li class="hover:text-softRed"><a href="">Categories</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- intro section -->
+     <section class="container flex flex-col md:flex-row gap-6">
+      <!-- main section -->
+       <div class="flex flex-col gap-6">
+        <!-- image -->
+         <div class="bg-webMobile bg-no-repeat bg-contain h-[24.5rem] md:bg-webDesktop md:bg-contain md:h-[18.6rem]"></div>
+         <!-- content -->
+          <div class="flex flex-col gap-y-3 md:flex-row w-full md:w-[45rem]">
+            <!-- heading -->
+            <div class="flex flex-1">
+              <h1 class="text-5xl font-bold w-[23rem] md:w-[18rem] md:text-5xl">The Bright Future of Web 3.0?</h1>
+            </div>
+            <!-- info -->
+            <div class="flex flex-col items-start flex-1">
+              <p>
+                We dive into the next evolution of the web that claims to put the power of the platforms 
+                back into the hands of the people. But is it really fulfilling its promise?
+              </p>
+              <button class="bg-softRed text-grayishBlue uppercase px-4 py-3 mt-2 mb-7 font-bold hover:bg-veryDarkBlue ease-in tracking-[.35rem]">Read more</button>
+            </div>
+          </div>
+       </div>
+      <!-- side section -->
+       <aside class="bg-veryDarkBlue py-9 px-8 md:px-4">
+        <h2 class="text-3xl font-extrabold text-softOrange">New</h2>
+        <div class="mt-4">
+          <div class="pb-5">
+            <a href=""><h3 class="mb-3">Hydrogen VS Electric Cars</h3></a>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+          <div class="py-5 border-y">
+            <a href=""><h3 class="mb-3">The Downsides of AI Artistry</h3></a>
+            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+          </div>
+          <div class="py-5">
+            <a href=""><h3 class="mb-3">Is VC Funding Drying Up?</h3></a>
+            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </div>
+        </div>
+       </aside>
+     </section>
+     <section class="container flex flex-col gap-[2rem] mt-12 md:flex-row">
+      <div class="flex flex-row gap-6 md:gap-3 w-[24rem]">
+        <img src="assets/images/image-retro-pcs.jpg" alt="" class="img">
+        <div>
+          <span>01</span>
+          <a href=""><h4>Reviving Retro PCs</h4></a>
+          <p class="pr-3 md:pr-0">What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+      <div class="flex flex-row gap-6 md:gap-3 w-[24rem]">
+        <img src="assets/images/image-top-laptops.jpg" alt="" class="img">
+        <div>
+          <span>02</span>
+          <a href=""><h4>Top 10 Laptops of 2022</h4></a>
+          <p class="pr-3 md:pr-0">Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+      <div class="flex flex-row gap-6 md:gap-3 w-[25rem]">
+        <img src="assets/images/image-gaming-growth.jpg" alt="" class="img">
+        <div>
+          <span>03</span>
+          <a href="" class=""><h4>The Growth of Gaming</h4></a>
+          <p class="pr-6 md:pr-0">How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+     </section>
+     <!-- coder detail -->
+     <section class="text-center w-1/2 mx-auto pt-10 pb-20 md:w-full text-veryDarkBlue">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="hover:text-softRed font-bold">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/franklynxchill" target="_blank" class="hover:text-softRed font-bold">Franklynxchill</a>.
+    </section>
+  </main>
+  <script src="/app/script.js"></script>
+</body>
+</html>
