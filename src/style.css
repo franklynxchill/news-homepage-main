@@ -30,7 +30,7 @@
 @tailwind utilities;
 
 h4 {
-  @apply font-bold text-veryDarkBlue text-[1.2rem] md:text-xl hover:text-softRed;
+  @apply font-bold text-veryDarkBlue text-[1.2rem] md:text-[1.2rem] font-bold hover:text-softRed;
 }
 p {
   @apply text-grayishBlue text-base md:text-base;
